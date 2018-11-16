@@ -1,0 +1,475 @@
+@import "vr";
+@import "mixin";
+@import "normalize";
+
+
+@font-face{
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face{
+  font-family: 'Lato', sans-serif;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../fonts/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MyriadPro-Regular.woff') format('woff'),
+  url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0 auto;
+}
+
+li{
+  list-style: none;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section, body{
+  background: black;
+}
+
+section{
+  padding-bottom: 160px;
+}
+
+
+//============================== header =======================================//
+
+header{
+  background: url("../img/banner_1.png") no-repeat center;
+  background-size: cover;
+  padding-top: 38px;
+  padding-bottom: 190px;
+  nav{
+    display: flex;
+    justify-content: space-around;
+    .header_menu{
+      padding-top: 11px;
+      li{
+        font-family: $fontMontserrat;
+        color:  #fefefe;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 0 60px;
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+        }
+      }
+    }
+    .header_links{
+      li{
+        display: inline-block;
+        padding: 0 19px;
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  .header_text {
+    position: relative;
+    padding-top: 200px;
+    text-align: center;
+    font-family: $fontMontserrat;
+    z-index: 3;
+    h2 {
+      position: relative;
+      color: #ffffff;
+      font-size: 140px;
+      font-weight: 900;
+      line-height: 170px;
+      text-transform: uppercase;
+      z-index: 3;
+    }
+    p {
+      color: #ffffff;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 170px;
+      text-align: center;
+      span {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+    .scene{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 1;
+      .layer{
+        .img-wrap{
+          position: relative;
+          max-width: 420px;
+          display: block;
+          width: auto;
+          left: -409px;
+          top: 211px;
+          &:nth-child(2){
+            left: 471px;
+            top: -61px;
+          }
+          &:last-child{
+            left: 369px;
+            top: -394px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+//======================================= about us ===========================//
+.about_us{
+  padding-top: 167px;
+   .flex{
+     display: flex;
+     .img{
+       background: url("../img/banner_2.png");
+       background-size: cover;
+       min-width: 60%;
+       margin: 0;
+     }
+     .text{
+       max-width: 400px;
+       color: white;
+       font-family: $fontMontserrat;
+       text-align: left;
+       padding-left: 84px;
+       margin: 0;
+       h3{
+         position: relative;
+         font-size: 72px;
+         font-weight: 700;
+         padding-bottom: 20px;
+         text-transform: uppercase;
+         .absolute_letter{
+           font-family: 'MyriadPro-Regular',sans-serif;
+           position: absolute;
+           font-size: 750px;
+           font-weight: 400;
+           bottom: -437px;
+           left: -499px;
+           line-height: 561px;
+         }
+       }
+       p{
+         color:  #797878;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 26px;
+       }
+     }
+   }
+}
+
+//============================== skills =======================================//
+
+.skills{
+  background: url("../img/banner_3.png") no-repeat center;
+  background-size: cover;
+  padding-top: 150px;
+  position: relative;
+  .text{
+    position: relative;
+    color: white;
+    font-family: $fontMontserrat;
+    text-align: left;
+    padding-top: 393px;
+    padding-bottom: 85px;
+    h3{
+      position: relative;
+      font-size: 72px;
+      font-weight: 700;
+      padding-bottom: 20px;
+      padding-left: 371px;
+      text-transform: uppercase;
+      .img{
+        position: relative;
+        padding-right: 7px;
+        z-index: 3;
+      }
+      .absolute_letter{
+        font-family: 'MyriadPro-Regular',sans-serif;
+        font-size: 750px;
+        font-weight: 400;
+        position: absolute;
+        top: -331px;
+        line-height: 561px;
+        left: 0;
+      }
+    }
+
+  }
+  .scene2{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .layer{
+      max-height: 730px;
+    }
+
+    .img-wrap{
+      position: relative;
+      left: 3%;
+      bottom: -377px;
+      max-width: 156px;
+      p{
+        font-family: $fontMontserrat;
+        position: relative;
+        top: -78px;
+        left: 6px;
+        text-align: center;
+        color: white;
+        &:last-child{
+          top: -54px;
+        }
+      }
+
+      &:nth-child(2){
+        bottom: -16px;
+        left: 14%;
+        p{
+          top: -66px;
+          left: 0;
+          &:last-child{
+            top: -44px;
+          }
+        }
+      }
+      &:nth-child(3){
+        bottom: -128px;
+        left: 19%;
+        p{
+          top: -66px;
+          left: 0;
+          &:last-child{
+            top: -44px;
+          }
+        }
+      }
+      &:nth-child(4){
+        bottom: 177px;
+        left: 29%;
+        p{
+          left: 8px;
+        }
+      }
+      &:nth-child(5){
+        bottom: 561px;
+        left: 41%;
+        p{
+          left: 8px;
+        }
+      }
+      &:last-child{
+        bottom: 505px;
+        left: 42%;
+      }
+    }
+  }
+}
+
+//==================================== projects =======================================//
+
+.projects{
+  padding-top: 90px;
+  .projects_banner{
+    background: url("../img/banner_4.png"), no-repeat center;
+    background-size: cover;
+    .text{
+      font-family: $fontMontserrat;
+      display: flex;
+      flex-direction: row-reverse;
+      color: white;
+      h3{
+        position: relative;
+        font-size: 66px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+        padding-top: 365px;
+        padding-bottom: 70px;
+        .black_letter{
+          position: relative;
+          color: black;
+          z-index: 3;
+          padding-left: 2px;
+        }
+        .absolute_letter{
+          color: white;
+          font-family: 'MyriadPro-Regular',sans-serif;
+          font-size: 750px;
+          font-weight: 400;
+          position: absolute;
+          top: -10px;
+          line-height: 561px;
+          right: -55px;
+        }
+      }
+      p{
+        color:  #ebebeb;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: center;
+        max-width: 570px;
+        margin: 0 auto;
+        padding-top: 268px;
+      }
+    }
+
+  }
+  .projects_slider{
+    outline: none;
+    text-align: center;
+    .slide{
+      outline: none;
+      position: relative;
+      img{
+        display: block;
+        width: 100%;
+      }
+      .text{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        p{
+          padding-top: 32%;
+          max-width: 200px;
+          font-family: $fontMontserrat;
+          font-size: 36px;
+          letter-spacing: 1px;
+          line-height: 36px;
+          color: #979696;
+          font-weight: bold;
+          text-align: center;
+          &:last-child{
+            padding-top: 0;
+          }
+          a{
+            font-size: 24px;
+            color: #ffffff;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    @include dots;
+  }
+  .next{
+    position: absolute;
+    z-index: 2;
+    right: -20px;
+    bottom: 76px;
+    cursor: pointer;
+  }
+  .prev{
+    position:absolute;
+    z-index: 2;
+    bottom: 76px;
+    cursor: pointer;
+    left: -20px;
+  }
+}
+
+//====================================== contacts ============================//
+
+.contact {
+  font-family: $fontMontserrat;
+  background: url("../img/banner_5.png") no-repeat center;
+  background-size: cover;
+  .text {
+    max-width: 560px;
+    margin: 0;
+    padding-top: 147px;
+    padding-bottom: 50px;
+    h5 {
+      font-size: 36px;
+      color: #d8d7d7;
+      padding-bottom: 35px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 24px;
+      line-height: 48px;
+      color: #919191;
+    }
+  }
+  .contact_links{
+    p{
+      font-size: 30px;
+      line-height: 48px;
+      color: #d8d7d7;
+    }
+    .links{
+      max-width: 270px;
+      padding-bottom: 80px;
+      display: flex;
+      margin: 0;
+      img{
+        display: block;
+        padding-top: 25px;
+      }
+    }
+  }
+}
+
+//============================= footer ============================//
+
+footer{
+  background: #0a0a0a;
+  margin: 0;
+  .container{
+    padding-top: 13px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    .logo{
+      margin: 0;
+    }
+    p{
+      padding-top: 18px;
+      font-family: $fontMontserrat;
+      font-size: 14px;
+      color: #373737;
+    }
+    ul{
+      margin: 0;
+      padding-top: 18px;
+      padding-left: 0;
+      li{
+        display: inline-block;
+        padding: 0 20px;
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+        }
+      }
+    }
+
+  }
+}
