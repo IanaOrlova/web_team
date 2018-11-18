@@ -42,6 +42,15 @@ section{
 }
 
 
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.1); }
+
+}
+
+svg{
+  fill: white;
+}
 //============================== header =======================================//
 
 header{
@@ -53,7 +62,7 @@ header{
     display: flex;
     justify-content: space-around;
     .header_menu{
-      padding-top: 11px;
+      padding-top: 28px;
       li{
         font-family: $fontMontserrat;
         color:  #fefefe;
@@ -61,7 +70,12 @@ header{
         font-weight: 600;
         text-transform: uppercase;
         display: inline-block;
-        padding: 0 60px;
+        padding: 0 40px;
+        &:hover{
+          cursor: pointer;
+          color: red;
+          transition: 0.5s;
+        }
         &:first-child{
           padding-left: 0;
         }
@@ -71,9 +85,19 @@ header{
       }
     }
     .header_links{
+      padding-top: 24px;
       li{
         display: inline-block;
         padding: 0 19px;
+        svg{
+          &:hover{
+            cursor: pointer;
+            .st0{
+              fill: red;
+              transition: 0.5s;
+            }
+          }
+        }
         &:first-child{
           padding-left: 0;
         }
@@ -116,6 +140,7 @@ header{
       z-index: 1;
       .layer{
         .img-wrap{
+          animation: pulse 2s infinite ease-in-out alternate;
           position: relative;
           max-width: 420px;
           display: block;
@@ -123,12 +148,14 @@ header{
           left: -409px;
           top: 211px;
           &:nth-child(2){
+            animation: pulse 2.3s infinite ease-in-out alternate;
             left: 471px;
             top: -61px;
           }
           &:last-child{
             left: 369px;
             top: -394px;
+            animation: pulse 3s infinite ease-in-out alternate;
           }
         }
 
@@ -233,6 +260,7 @@ header{
       left: 3%;
       bottom: -377px;
       max-width: 156px;
+      animation: pulse 2s infinite ease-in-out alternate;
       p{
         font-family: $fontMontserrat;
         position: relative;
@@ -246,6 +274,7 @@ header{
       }
 
       &:nth-child(2){
+        animation: pulse 3s infinite ease-in-out alternate;
         bottom: -16px;
         left: 14%;
         p{
@@ -257,6 +286,7 @@ header{
         }
       }
       &:nth-child(3){
+        animation: pulse 2.5s infinite ease-in-out alternate;
         bottom: -128px;
         left: 19%;
         p{
@@ -268,6 +298,7 @@ header{
         }
       }
       &:nth-child(4){
+        animation: pulse 2s infinite ease-in-out alternate;
         bottom: 177px;
         left: 29%;
         p{
@@ -275,6 +306,7 @@ header{
         }
       }
       &:nth-child(5){
+        animation: pulse 2.5s infinite ease-in-out alternate;
         bottom: 561px;
         left: 41%;
         p{
@@ -282,6 +314,7 @@ header{
         }
       }
       &:last-child{
+        animation: pulse 3s infinite ease-in-out alternate;
         bottom: 505px;
         left: 42%;
       }
@@ -372,6 +405,10 @@ header{
             font-size: 24px;
             color: #ffffff;
             text-transform: uppercase;
+            &:hover{
+              color: red;
+              transition: 0.5s;
+            }
           }
         }
       }
@@ -384,6 +421,10 @@ header{
     right: -20px;
     bottom: 76px;
     cursor: pointer;
+    &:hover{
+      transition: 0.5s;
+      transform: scale(1.3);
+    }
   }
   .prev{
     position:absolute;
@@ -391,6 +432,10 @@ header{
     bottom: 76px;
     cursor: pointer;
     left: -20px;
+    &:hover{
+      transition: 0.5s;
+      transform: scale(1.3);
+    }
   }
 }
 
@@ -431,6 +476,26 @@ header{
       img{
         display: block;
         padding-top: 25px;
+        padding-bottom: 30px;
+      }
+      a{
+        display: block;
+      }
+      .img{
+        &:hover{
+          cursor: pointer;
+          svg{
+
+          }
+          .st0{
+            fill: red;
+            transition: 0.5s;
+          }
+          img{
+            transform: scale(1.3);
+            transition: 0.5s;
+          }
+        }
       }
     }
   }
@@ -443,7 +508,7 @@ footer{
   margin: 0;
   .container{
     padding-top: 13px;
-    padding-bottom: 24px;
+    padding-bottom: 13px;
     display: flex;
     justify-content: space-between;
     .logo{
@@ -457,11 +522,20 @@ footer{
     }
     ul{
       margin: 0;
-      padding-top: 18px;
+      padding-top: 8px;
       padding-left: 0;
       li{
         display: inline-block;
         padding: 0 20px;
+        svg{
+          &:hover{
+            cursor: pointer;
+            .st0{
+              fill: red;
+              transition: 0.5s;
+            }
+          }
+        }
         &:first-child{
           padding-left: 0;
         }
