@@ -86,13 +86,3 @@ $(document).ready(function () {
 
 //===============================//
 
-// var scene = document.getElementById('scene');
-// var scene2 = document.getElementById('scene2');
-// var scene3 = document.getElementById('scene3');
-// var scene4 = document.getElementById('scene4');
-//
-//
-// var parallaxInstance = new Parallax(scene);
-// var parallaxInstance2 = new Parallax(scene2);
-// var parallaxInstance3 = new Parallax(scene3);
-// var parallaxInstance4 = new Parallax(scene4);
